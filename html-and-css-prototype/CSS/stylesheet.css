@@ -7,7 +7,7 @@
 
 body {
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
+	color: grey;
 	line-height: 1.4;
 }
 
@@ -40,6 +40,7 @@ h1 {
 */
 
 /* Your CSS code goes here */
+/* Classes */
 .text-bubble{
 	color: #FFF;
 	text-align: center;
@@ -47,29 +48,68 @@ h1 {
 	background-color: #424242;
 	border-radius: 0.25em;
 	padding: 1em 0;
-	font-family: "rooney-sans", "Avenir-Book", "Calibri", "sans-serif";
+	margin:.5em 0;
+	font-family:"sans-serif";
 
 }
-
-.project {
+/* Used for sizing the projects box */
+.project-size{
 	margin: 2em auto;
 	width: 265px;
+	max-height: 1200px;
 }
 .bar-group{
 display: flex;
 align-content: stretch;
 width: 100%;
 }
+.form-box{
+	width:100%;
+	height: 14em;
+	border: 1px solid grey;
+	font-family: AmericanTypewriter;
+	font-size:.895em;
+	padding: .8em 0 0 1.5em;
+}
 .bar{
 	height: .75em;
 	margin-top: .25em;
 }
+/* ID's */
 #finished-progress{
 	background-color: #EF5F3C;
 	width: 75%;
 }
-#unfinished-progress-{
+#unfinished-progress{
 	background-color: #eaeaea;
-	border: thin solid #E3E3E;
+	border: thin solid grey;
+	align-self: flex-end;
 	width: 25%;
+}
+#amount {
+	font-weight: bold;
+	padding: 0.9em;
+	width: 8em;
+	margin-left: 0;
+	margin-right:.7em;
+	border: thin solid #E3E3E3;
+	border-radius: 5%;
+}
+#why-give-50{
+	font-weight:500;
+	padding: .5em 0 .5em 0 ;
+	color: #20A1D4;
+	font-family: "AmericanTypewriter";
+	font-style: italic;
+	font-size: 14px;
+}
+#give-button{
+	font-weight: bold;
+	color: white;
+	padding: 0.9em;
+	width: 8em;
+	border: thin solid #E3E3E3;
+	border-radius: 5%;
+	background-color: #1CBC2C;
+
 }
