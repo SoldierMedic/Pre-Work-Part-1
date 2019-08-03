@@ -45,7 +45,7 @@ input {/* NOTE: This fixes the margin in between input and why-give-50 */
 	margin-bottom:5px;
 }
 /* Classes */
-.text-bubble {
+.text-bubble { /* NOTE: this class sets the styles and spacing for the text-bubble */
 	position: relative;
 	color: #FFF;
 	text-align: center;
@@ -57,7 +57,7 @@ input {/* NOTE: This fixes the margin in between input and why-give-50 */
 	font-family:"sans-serif";
 }
 
-.text-bubble:after {
+.text-bubble:after { /* NOTE: this class creates the text-bubble tail */
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -70,18 +70,22 @@ input {/* NOTE: This fixes the margin in between input and why-give-50 */
 	margin-left: -0.45em;
 	margin-bottom: -0.45em;
 }
-/* Used for sizing the projects box */
+/* NOTE: Used for setting the overall size of the projects box */
 .project-size{
 	margin: 2em auto;
 	width: 260px;
 	max-height: 300px;
 }
-.bar-group{
+.bar-group{ /* NOTE: This class sets the size of the total progress bar. */
 display: flex;
 align-content: stretch;
 width: 100%;
 }
-.form-box{
+.bar{ /* NOTE: spacing for the progress bar */
+	height: .75em;
+	margin-top: .25em;
+}
+.form-box{ /* NOTE: this class sets the form box dimensions and spacing */
 	height: 12m;
 	border: 1px solid #E3E3E3;
 	font-family: AmericanTypewriter;
@@ -91,11 +95,7 @@ width: 100%;
 	height: 192px;
 	box-shadow: 0 1px #DDDDDD;
 }
-.bar{
-	height: .75em;
-	margin-top: .25em;
-}
-.button-layout{
+.button-layout{ /* NOTE: sets dimensions and styles for the bottom two buttons. */
 	font-weight:900;
 	font-size: 11.3px;
 	color: #717171;
@@ -112,7 +112,17 @@ width: 100%;
 
  ID's */
 
-#amount { /* This id is used for */
+#finished-progress{
+	background-color: #EF5F3C;
+	width: 75%;
+}
+#unfinished-progress{
+	background-color: #FAFAFA;
+	border: thin solid #E3E3E3;
+	align-self: flex-end;
+	width: 25%;
+}
+#amount { /* This id is used for setting specific styles and dimesions for the donation amount feature */
 	font-weight: bold;
 	font-size: 15px;
 	padding: 0.9em;
@@ -123,11 +133,7 @@ width: 100%;
 	border: thin solid #E3E3E3;
 	border-radius: 5%;
 }
-#finished-progress{
-	background-color: #EF5F3C;
-	width: 75%;
-}
-#give-button{
+#give-button{ /* NOTE: this gives the styles and dimensions for give now button. */
 	font-weight: bold;
 	color: white;
 	font-size: 14.2px;
@@ -137,19 +143,11 @@ width: 100%;
 	border: thin solid #E3E3E3;
 	border-radius: 5%;
 	background-color: #1CBC2C;
-
 }
 #join-text{
 	margin-top: 10px;
 	padding: 0 2em 12px 0;
 }
-#unfinished-progress{
-	background-color: #FAFAFA;
-	border: thin solid #E3E3E3;
-	align-self: flex-end;
-	width: 25%;
-}
-
 #why-give-50{
 	font-weight:500;
 	color: #20A1D4;
