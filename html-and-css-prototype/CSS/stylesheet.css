@@ -40,3 +40,36 @@ h1 {
 */
 
 /* Your CSS code goes here */
+.text-bubble{
+	color: #FFF;
+	text-align: center;
+	font-size: 0.75em;
+	background-color: #424242;
+	border-radius: 0.25em;
+	padding: 1em 0;
+	font-family: "rooney-sans", "Avenir-Book", "Calibri", "sans-serif";
+
+}
+
+.project {
+	margin: 2em auto;
+	width: 265px;
+}
+.bar-group{
+display: flex;
+align-content: stretch;
+width: 100%;
+}
+.bar{
+	height: .75em;
+	margin-top: .25em;
+}
+#finished-progress{
+	background-color: #EF5F3C;
+	width: 75%;
+}
+#unfinished-progress-{
+	background-color: #eaeaea;
+	border: thin solid #E3E3E;
+	width: 25%;
+}
