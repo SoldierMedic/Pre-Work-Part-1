@@ -24,6 +24,7 @@ h1 {
 	text-align: center;
 }
 
+
 /* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
 
 	FONTS:
@@ -40,23 +41,40 @@ h1 {
 */
 
 /* Your CSS code goes here */
+input {/* NOTE: This fixes the margin in between input and why-give-50 */
+	margin-bottom:5px;
+}
 /* Classes */
-.text-bubble{
+.text-bubble {
+	position: relative;
 	color: #FFF;
 	text-align: center;
 	font-size: 0.75em;
 	background-color: #424242;
-	border-radius: 0.25em;
+	border-radius: .2em;
 	padding: 1em 0;
 	margin:.5em 0;
 	font-family:"sans-serif";
+}
 
+.text-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 11%;
+	width: 0;
+	height: 0;
+	border: 0.5em solid transparent;
+	border-top-color: #424242;
+	border-bottom: 0;
+	margin-left: -0.45em;
+	margin-bottom: -0.45em;
 }
 /* Used for sizing the projects box */
 .project-size{
 	margin: 2em auto;
-	width: 265px;
-	max-height: 1200px;
+	width: 260px;
+	max-height: 300px;
 }
 .bar-group{
 display: flex;
@@ -64,52 +82,105 @@ align-content: stretch;
 width: 100%;
 }
 .form-box{
-	width:100%;
-	height: 14em;
-	border: 1px solid grey;
+	height: 12m;
+	border: 1px solid #E3E3E3;
 	font-family: AmericanTypewriter;
-	font-size:.895em;
-	padding: .8em 0 0 1.5em;
+	font-size:13px;
+	padding: 15px 0 0 1.3em;
+	width:260px;
+	height: 192px;
+	box-shadow: 0 1px #DDDDDD;
 }
 .bar{
 	height: .75em;
 	margin-top: .25em;
 }
-/* ID's */
-#finished-progress{
-	background-color: #EF5F3C;
-	width: 75%;
+.button-layout{
+	font-weight:900;
+	font-size: 11.3px;
+	color: #717171;
+	margin: 13px 0 0 0;
+	padding: .6em;
+	width: 124px;
+	height:35px;
+	border: thin solid #E3E3E3;
+	box-shadow: 0px 1px #DDDDDD;
+	border-radius: 5%;
+	background-color: #FAFAFA;
 }
-#unfinished-progress{
-	background-color: #eaeaea;
-	border: thin solid grey;
-	align-self: flex-end;
-	width: 25%;
-}
-#amount {
+/*$167 still needed for this project
+
+ ID's */
+
+#amount { /* This id is used for */
 	font-weight: bold;
+	font-size: 15px;
 	padding: 0.9em;
-	width: 8em;
+	width: 104px;
+	height: 44px;
 	margin-left: 0;
 	margin-right:.7em;
 	border: thin solid #E3E3E3;
 	border-radius: 5%;
 }
-#why-give-50{
-	font-weight:500;
-	padding: .5em 0 .5em 0 ;
-	color: #20A1D4;
-	font-family: "AmericanTypewriter";
-	font-style: italic;
-	font-size: 14px;
+#finished-progress{
+	background-color: #EF5F3C;
+	width: 75%;
 }
 #give-button{
 	font-weight: bold;
 	color: white;
+	font-size: 14.2px;
 	padding: 0.9em;
-	width: 8em;
+	width: 104px;
+	height: 44px;
 	border: thin solid #E3E3E3;
 	border-radius: 5%;
 	background-color: #1CBC2C;
 
 }
+#join-text{
+	margin-top: 10px;
+	padding: 0 2em 12px 0;
+}
+#unfinished-progress{
+	background-color: #FAFAFA;
+	border: thin solid #E3E3E3;
+	align-self: flex-end;
+	width: 25%;
+}
+
+#why-give-50{
+	font-weight:500;
+	color: #20A1D4;
+	font-family: "AmericanTypewriter";
+	font-style: italic;
+	font-size: 13px;
+}
+
+
+/* #save-button{
+	font-weight: bold;
+	font-size: 10px;
+	color: #818181;
+	margin: 1em 0 0 0;
+	padding: 1em;
+	width: 12em;
+	border: thin solid #E3E3E3;
+	border-radius: 5%;
+	background-color: #FAFAFA;
+
+}
+#friends-button{
+	font-weight: bold;
+	font-size: 10px;
+	color: #818181;
+	margin: 1em 0 0 0;
+	padding: 1em;
+	width: 12em;
+	border: thin solid #E3E3E3;
+	box-shadow: 1px 1px #DDDDDD;
+	border-radius: 5%;
+	background-color: #FAFAFA;
+
+} */
